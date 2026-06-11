@@ -7,7 +7,7 @@ export const personalInfo = {
   github: 'https://github.com/teoarjun',
   linkedin: 'https://www.linkedin.com/in/arjun-teotia-51706982/',
   phone: '+91 9971-756-334',
-  resumeUrl: '/portfolio/resume.pdf',
+  resumeUrl: '/resume.pdf',
   yearsOfExperience: '10+',
   headline: 'I build distributed systems that ship fast and scale further.',
   subheadline:
