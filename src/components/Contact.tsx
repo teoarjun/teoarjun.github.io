@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React from 'react'
 import FadeIn from './FadeIn'
 import { personalInfo } from '../data/portfolio'
 import { Mail, Linkedin, Github, Copy, Check, ArrowRight } from 'lucide-react'
@@ -10,6 +11,17 @@ export default function Contact() {
     navigator.clipboard.writeText(personalInfo.email)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value
+    const message = (form.elements.namedItem('body') as HTMLTextAreaElement).value
+    const subject = `Portfolio enquiry from ${name}`
+    const body = `From: ${name}\nEmail: ${email}\n\n${message}`
+    window.location.href = `mailto:${personalInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   }
 
   return (
@@ -76,12 +88,7 @@ export default function Contact() {
 
           {/* Right: quick contact form */}
           <FadeIn delay={0.2}>
-            <form
-              action={`mailto:${personalInfo.email}`}
-              method="get"
-              encType="text/plain"
-              className="card"
-            >
+            <form onSubmit={handleSubmit} className="card">
               <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 mb-5">
                 Send a message
               </h3>
