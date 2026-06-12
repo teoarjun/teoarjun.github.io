@@ -10,7 +10,7 @@ const badgeColors: Record<string, string> = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 grid-bg opacity-60 dark:opacity-100" />
       {/* Radial glow */}

@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="85%" cy="18%" r="40%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Decorative rings (top-right) -->
+  <circle cx="1130" cy="90" r="220" fill="none" stroke="#10b981" stroke-width="1" opacity="0.07"/>
+  <circle cx="1130" cy="90" r="145" fill="none" stroke="#10b981" stroke-width="1" opacity="0.09"/>
+  <circle cx="1130" cy="90" r="70"  fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.12"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="155" width="5" height="310" fill="#10b981" rx="2.5"/>
+
+  <!-- Name -->
+  <text x="110" y="255"
+    font-family="'Arial Black','Helvetica Neue',Arial,sans-serif"
+    font-size="82" font-weight="900" fill="#ffffff" letter-spacing="-2">Arjun Teotia</text>
+
+  <!-- Role -->
+  <text x="113" y="305"
+    font-family="Arial,sans-serif"
+    font-size="26" font-weight="600" fill="#a1a1aa" letter-spacing="0.2">
+    Technical Lead · Senior Full-Stack &amp; Mobile Engineer
+  </text>
+
+  <!-- Divider -->
+  <line x1="113" y1="338" x2="580" y2="338" stroke="#27272a" stroke-width="1.5"/>
+
+  <!-- Stats row -->
+  <text x="113" y="375" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#10b981">10+</text>
+  <text x="155" y="375" font-family="Arial,sans-serif" font-size="18" fill="#71717a"> yrs exp  ·  </text>
+  <text x="255" y="375" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#10b981">50–80%</text>
+  <text x="325" y="375" font-family="Arial,sans-serif" font-size="18" fill="#71717a"> API latency cut  ·  </text>
+  <text x="510" y="375" font-family="Arial,sans-serif" font-size="18" font-weight="800" fill="#10b981">≈0</text>
+  <text x="535" y="375" font-family="Arial,sans-serif" font-size="18" fill="#71717a"> prod defects</text>
+
+  <!-- Turing badge -->
+  <rect x="113" y="400" width="182" height="36" rx="18" fill="#3b82f6" fill-opacity="0.15"/>
+  <text x="204" y="423" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#60a5fa" text-anchor="middle">Turing — World Top 1%</text>
+
+  <!-- Toptal badge -->
+  <rect x="305" y="400" width="182" height="36" rx="18" fill="#8b5cf6" fill-opacity="0.15"/>
+  <text x="396" y="423" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#a78bfa" text-anchor="middle">Toptal — World Top 3%</text>
+
+  <!-- Trusted by label -->
+  <text x="113" y="476" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#52525b" letter-spacing="2.5">TRUSTED BY</text>
+
+  <!-- Trusted by logos (text) -->
+  <text x="113" y="510" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#71717a" letter-spacing="1">Apple · FBI · US Bank · L'Oréal</text>
+
+  <!-- Bottom-right: URL -->
+  <text x="1118" y="602" font-family="'Courier New',monospace" font-size="15" font-weight="500" fill="#3f3f46" text-anchor="end">teoarjun.github.io</text>
+</svg>

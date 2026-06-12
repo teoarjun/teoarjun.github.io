@@ -36,7 +36,7 @@ export default function Navigation({ theme, toggleTheme }: NavigationProps) {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
-          href="#"
+          href="#home"
           className="font-bold text-lg tracking-tight flex items-center gap-2 group"
         >
           <span className="w-8 h-8 rounded-lg bg-emerald-500 text-white text-sm font-black flex items-center justify-center group-hover:bg-emerald-400 transition-colors">
