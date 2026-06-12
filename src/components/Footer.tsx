@@ -51,6 +51,7 @@ export default function Footer() {
 
           <p className="text-xs text-zinc-400 dark:text-zinc-600">
             © {year} Arjun Teotia · {personalInfo.location}
+            <span className="ml-2 font-mono text-zinc-300 dark:text-zinc-700">{__APP_VERSION__}</span>
           </p>
         </div>
       </div>
